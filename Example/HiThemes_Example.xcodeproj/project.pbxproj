@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,17 @@
 		1CB954992602608600620639 /* HiThemes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB954832602608600620639 /* HiThemes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27C43A5151DE76E97E9F3A98 /* Pods_HiThemes_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53776E4E0BBF5296410BF5E0 /* Pods_HiThemes_ExampleTests.framework */; };
 		2A51D4C967FCC9FCB8D77812 /* Pods_HiThemes_Example_HiThemes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5196BCB7361C948C453D83DD /* Pods_HiThemes_Example_HiThemes.framework */; };
+		4915DB9A291BB47B008F9AEA /* Enviromnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB6D291BB47B008F9AEA /* Enviromnet.swift */; };
+		4915DB9B291BB47B008F9AEA /* Extension+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB6F291BB47B008F9AEA /* Extension+Bundle.swift */; };
+		4915DB9C291BB47B008F9AEA /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB70291BB47B008F9AEA /* Extension+UIImage.swift */; };
+		4915DB9D291BB47B008F9AEA /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB71291BB47B008F9AEA /* BaseClass.swift */; };
+		4915DB9E291BB47B008F9AEA /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB72291BB47B008F9AEA /* ButtonPrimary.swift */; };
+		4915DB9F291BB47B008F9AEA /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB73291BB47B008F9AEA /* Extension+UIView.swift */; };
+		4915DBA0291BB47B008F9AEA /* ConstantsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB74291BB47B008F9AEA /* ConstantsEndPoint.swift */; };
+		4915DBA1291BB47B008F9AEA /* MiniAppCoreAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4915DB76291BB47B008F9AEA /* MiniAppCoreAssets.xcassets */; };
+		4915DBA2291BB47B008F9AEA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4915DB78291BB47B008F9AEA /* Localizable.strings */; };
+		4915DBA3291BB47B008F9AEA /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB7B291BB47B008F9AEA /* Localizable.swift */; };
+		4915DBB3291BB47B008F9AEA /* HiThemesSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB99291BB47B008F9AEA /* HiThemesSDK.swift */; };
 		4C72347147E47DB1197A29C0 /* Pods_HiThemes_Example_HiThemes_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C8550D66DD5B89172D66F1 /* Pods_HiThemes_Example_HiThemes_ExampleUITests.framework */; };
 		6DF370C274D5797EE4A6A21A /* Pods_HiThemes_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2461141695E6527CA3CFD0 /* Pods_HiThemes_Example.framework */; };
 /* End PBXBuildFile section */
@@ -101,6 +112,18 @@
 		1CB954942602608600620639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		245259B59F513C84FAC1BEF0 /* Pods-HiThemes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiThemes.release.xcconfig"; path = "Target Support Files/Pods-HiThemes/Pods-HiThemes.release.xcconfig"; sourceTree = "<group>"; };
 		27A9B4DB2656F77EEC942F16 /* Pods-HiThemes_Example-HiThemes_ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiThemes_Example-HiThemes_ExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-HiThemes_Example-HiThemes_ExampleUITests/Pods-HiThemes_Example-HiThemes_ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4915DB6D291BB47B008F9AEA /* Enviromnet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enviromnet.swift; sourceTree = "<group>"; };
+		4915DB6F291BB47B008F9AEA /* Extension+Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Bundle.swift"; sourceTree = "<group>"; };
+		4915DB70291BB47B008F9AEA /* Extension+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		4915DB71291BB47B008F9AEA /* BaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
+		4915DB72291BB47B008F9AEA /* ButtonPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
+		4915DB73291BB47B008F9AEA /* Extension+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		4915DB74291BB47B008F9AEA /* ConstantsEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsEndPoint.swift; sourceTree = "<group>"; };
+		4915DB76291BB47B008F9AEA /* MiniAppCoreAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MiniAppCoreAssets.xcassets; sourceTree = "<group>"; };
+		4915DB79291BB47B008F9AEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4915DB7A291BB47B008F9AEA /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4915DB7B291BB47B008F9AEA /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		4915DB99291BB47B008F9AEA /* HiThemesSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiThemesSDK.swift; sourceTree = "<group>"; };
 		5196BCB7361C948C453D83DD /* Pods_HiThemes_Example_HiThemes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiThemes_Example_HiThemes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53776E4E0BBF5296410BF5E0 /* Pods_HiThemes_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiThemes_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DCA3B7032D4CBF182CC020 /* Pods-HiThemes_Example-HiThemes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiThemes_Example-HiThemes.release.xcconfig"; path = "Target Support Files/Pods-HiThemes_Example-HiThemes/Pods-HiThemes_Example-HiThemes.release.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +241,11 @@
 		1CB954842602608600620639 /* HiThemes */ = {
 			isa = PBXGroup;
 			children = (
+				4915DB6E291BB47B008F9AEA /* Common */,
+				4915DB6C291BB47B008F9AEA /* Enviroment */,
+				4915DB99291BB47B008F9AEA /* HiThemesSDK.swift */,
+				4915DB7C291BB47B008F9AEA /* Modules */,
+				4915DB75291BB47B008F9AEA /* Resources */,
 				1CB954852602608600620639 /* HiThemes.h */,
 				1CB954862602608600620639 /* Info.plist */,
 			);
@@ -249,6 +277,52 @@
 				56DCA3B7032D4CBF182CC020 /* Pods-HiThemes_Example-HiThemes.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4915DB6C291BB47B008F9AEA /* Enviroment */ = {
+			isa = PBXGroup;
+			children = (
+				4915DB6D291BB47B008F9AEA /* Enviromnet.swift */,
+			);
+			path = Enviroment;
+			sourceTree = "<group>";
+		};
+		4915DB6E291BB47B008F9AEA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4915DB6F291BB47B008F9AEA /* Extension+Bundle.swift */,
+				4915DB70291BB47B008F9AEA /* Extension+UIImage.swift */,
+				4915DB71291BB47B008F9AEA /* BaseClass.swift */,
+				4915DB72291BB47B008F9AEA /* ButtonPrimary.swift */,
+				4915DB73291BB47B008F9AEA /* Extension+UIView.swift */,
+				4915DB74291BB47B008F9AEA /* ConstantsEndPoint.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4915DB75291BB47B008F9AEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4915DB76291BB47B008F9AEA /* MiniAppCoreAssets.xcassets */,
+				4915DB77291BB47B008F9AEA /* Localizable */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4915DB77291BB47B008F9AEA /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				4915DB78291BB47B008F9AEA /* Localizable.strings */,
+				4915DB7B291BB47B008F9AEA /* Localizable.swift */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		4915DB7C291BB47B008F9AEA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		88C1C46751A4E381F699293C /* Frameworks */ = {
@@ -394,7 +468,7 @@
 					};
 					1CB954822602608600620639 = {
 						CreatedOnToolsVersion = 12.4;
-						LastSwiftMigration = 1240;
+						LastSwiftMigration = 1340;
 					};
 					1CB9548A2602608600620639 = {
 						CreatedOnToolsVersion = 12.4;
@@ -409,6 +483,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 1CB9543F2602605200620639;
 			productRefGroup = 1CB954492602605200620639 /* Products */;
@@ -453,6 +528,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4915DBA1291BB47B008F9AEA /* MiniAppCoreAssets.xcassets in Resources */,
+				4915DBA2291BB47B008F9AEA /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +663,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4915DBB3291BB47B008F9AEA /* HiThemesSDK.swift in Sources */,
+				4915DBA0291BB47B008F9AEA /* ConstantsEndPoint.swift in Sources */,
+				4915DB9C291BB47B008F9AEA /* Extension+UIImage.swift in Sources */,
+				4915DB9A291BB47B008F9AEA /* Enviromnet.swift in Sources */,
+				4915DB9F291BB47B008F9AEA /* Extension+UIView.swift in Sources */,
+				4915DB9B291BB47B008F9AEA /* Extension+Bundle.swift in Sources */,
+				4915DB9D291BB47B008F9AEA /* BaseClass.swift in Sources */,
+				4915DBA3291BB47B008F9AEA /* Localizable.swift in Sources */,
+				4915DB9E291BB47B008F9AEA /* ButtonPrimary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +728,15 @@
 				1CB954572602605200620639 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4915DB78291BB47B008F9AEA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4915DB79291BB47B008F9AEA /* en */,
+				4915DB7A291BB47B008F9AEA /* vi */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

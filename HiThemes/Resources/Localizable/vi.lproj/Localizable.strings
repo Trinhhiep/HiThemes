@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  MiniAppCore_Example
+
+  Created by NgocHTN6 on 20/09/2022.
+  
+*/
+//MARK: - OS Specifics
+NSPhotoLibraryUsageDescription = "Quý khách cần cung cấp quyền truy cập Thư viện ảnh để sử dụng chức năng này";
+NSCameraUsageDescription = "Quý khách cần cung cấp quyền truy cập Camera để sử dụng chức năng này";
+//MARK: - OCR
+"confirm_vehicle_registration_title" = "Xác thực cà vẹt xe";
+"HDI_new_condition_of_picture"="Đặt giấy đăng ký xe trong vùng của camera\n(Tránh chụp mất góc, không lấy được thông tin)";
+"manual_typing" ="Nhập thông tin thủ công";
+"setting" = "Cài đặt";
+"validate_CMND_CCCD"="Nhận diện thông tin CMND/CCCD";
+"message_cameraOCR"="Đặt CMND/CCCD trong vùng của camera\n(Tránh chụp mất góc, không lấy được thông tin)";
+"certificate_passport"="Nhận diện thông tin Hộ chiếu";
+"OCR_passport_sub"="Đặt Hộ chiếu trong vùng của camera\n(Tránh chụp mất góc, không lấy được thông tin)";
+"HDI_new_condition_of_picture"="Đặt giấy đăng ký xe trong vùng của camera\n(Tránh chụp mất góc, không lấy được thông tin)";
+"confirm_moto_registration_title"="Nhận diện thông tin Xe Máy";
+"confirm_car_registration_title"="Nhận diện thông tin Xe Ô tô";
+"message_accept_camera"="Quý khách vui lòng cho phép truy cập Máy ảnh để tiếp tục sử dụng tính năng này";
+"popup_OCR_invalid_message"="<font face='inter'>Không nhận diện được thông tin trên hình ảnh vừa chụp. Quý khách vui lòng thử lại.<br></font><font face='inter-medium' ><b1><br>• Chụp ảnh rõ nét hơn <br>• Chụp đúng hình ảnh CMND/CCCD.</b1></font>";
+"popup_OCR_invalid_passport_message"="<font face='inter'>Không nhận diện được thông tin trên hình ảnh vừa chụp. Quý khách vui lòng thử lại.<br></font><font face='inter-medium' ><b1><br>• Chụp ảnh rõ nét hơn <br>• Chụp đúng hình ảnh Hộ chiếu.</b1></font>";
+"take_valid_cavet_message" ="<font face='inter'>Không nhận diện được thông tin trên hình ảnh vừa chụp. Quý khách vui lòng thử lại.<br></font>
+<font face='inter-medium' ><b1><br>• Chụp ảnh rõ nét hơn
+<br>• Chụp đúng hình ảnh cavet xe.</b1></font>";

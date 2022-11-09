@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  MiniAppCore_Example
+
+  Created by NgocHTN6 on 20/09/2022.
+  
+*/
+//MARK: - OS Specifics
+NSPhotoLibraryUsageDescription = "Quý khách cần cung cấp quyền truy cập Thư viện ảnh để sử dụng chức năng này";
+NSCameraUsageDescription = "Quý khách cần cung cấp quyền truy cập Camera để sử dụng chức năng này";
+//MARK: - OCR
+"confirm_vehicle_registration_title" = "Vehicle registration certificate authentication.";
+"HDI_new_condition_of_picture"="Place the vehicle registration certificate in the area of the camera (Avoid taking pictures that are off-angle or can't get information)";
+"manual_typing" ="Enter information manually.";
+"setting" = "Settings";
+"validate_CMND_CCCD"="Identify ID number";
+"message_cameraOCR"="Put your ID number in the camera area \n(Avoid taking pictures that are off-angle or can't get information)";
+"certificate_passport"="Passport information identification";
+"OCR_passport_sub"="Place the passport in the area of the camera \n(Put all the corners of the passport in the picture, get full information)";
+"HDI_new_condition_of_picture"="Place the vehicle registration certificate in the area of the camera (Avoid taking pictures that are off-angle or can't get information)";
+"confirm_moto_registration_title"="Identify motorcycle information";
+"confirm_car_registration_title"="Identify car information";
+"message_accept_camera"="Please allow Camera access to continue using this feature";
+"popup_OCR_invalid_message"="<font face='inter'>The information on the image just taken is not recognized. Please try again.<br></font><font face='inter-medium' ><b1><br>• Take a clearer photo <br>• Take the correct photo of the citizen identity card.</b1></font>";
+"popup_OCR_invalid_passport_message"="<font face='inter'>The information on the image just taken is not recognized. Please try again.<br></font><font face='inter-medium' ><b1><br>• Take a clearer photo <br>• Take the correct photo of the Passport.</b1></font>";
+"take_valid_cavet_message" ="<font face='inter'>The information on the image just taken is not recognized. Please try again.<br></font>
+<font face='inter-medium' ><b1><br>• Take a clearer picture
+<br>• Take the right picture of the vehicle registration certificate.</b1></font>";
