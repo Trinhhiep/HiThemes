@@ -1,0 +1,38 @@
+platform :ios, '11.0'
+
+target 'HiThemes_Example' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for HiThemes_Example
+  
+  target 'HiThemes' do
+    # Pods for HiThemes
+    
+    # Comment the next line if you don't want to use dynamic frameworks
+    use_frameworks!
+    # Pods for HiThemes
+
+    # Automate dependencies from HiThemes.podspec
+    lib_dependencies = JSON.parse(`pod ipc spec ../HiThemes.podspec`)
+
+    if !lib_dependencies.nil?
+      lib_dependencies = HashWithIndifferentAccess.new(lib_dependencies["dependencies"])
+      lib_dependencies.each do | key , value |
+        if key != "VTiPhoneLibrary/vtiosui_interfaces"
+          pod key, value[0]
+        end
+      end
+    end
+  end
+
+  target 'HiThemes_ExampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'HiThemes_ExampleUITests' do
+    # Pods for testing
+  end
+
+end
