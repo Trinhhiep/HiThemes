@@ -1,0 +1,6 @@
+framework module Pods_HiThemes_Example_HiThemes_ExampleUITests {
+  umbrella header "Pods-HiThemes_Example-HiThemes_ExampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
