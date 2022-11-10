@@ -37,7 +37,7 @@ public class PopupVC: UIViewController {
     @IBOutlet weak var lblContent: UILabel!
     
     @IBOutlet weak var leftButton: UIButton!
-    @IBOutlet weak var rightButton: UIButton!
+    @IBOutlet weak var rightButton: ButtonPrimary!
     
     private var popupType : PopupType?
     private var titlePopup : String = ""

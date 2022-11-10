@@ -19,28 +19,37 @@ public class PopupManager{
         let typeConfirm = PopupType.confirm(title: title, content: content,
                                      titleLeftBtn: cancel,
                                      titleRightBtn: cancel) {
-            
         } actionRightBtn: {
-            
         }
-        
         let typeAlert = PopupType.alert(title: title, content: content, titleRightBtn: confirm) {
-            
         }
         let typeImage = PopupType.alertWithImage(title: title, image: UIImage(named: "ic_fail_circle_red", in: Bundle.resourceBundle(for: PopupManager.self), compatibleWith: nil) ?? UIImage(), content: content, titleRightBtn: confirm) {
                         
         }
-        
-        
-        
-
-        pushToPopupVC(vc: vc, type: typeConfirm)
+//        presentToPopupVC(vc: vc, type: typeConfirm)
+        presentToPopupWithImageVC(vc: vc, titlePopup: title,
+                                  contentPopup: content,
+                                  imagePopup: UIImage(named: "img_Mascot", in: Bundle.resourceBundle(for: PopupManager.self), compatibleWith: nil) ?? UIImage(),
+                                  rightBtnTitle: "Confirm")
     }
     
-    public func pushToPopupVC(vc:UIViewController, type: PopupType, actionClose : (()->Void)? = nil){
+    public func presentToPopupVC(vc:UIViewController, type: PopupType, actionClose : (()->Void)? = nil){
         guard let vcPopup = UIStoryboard(name: "Popup", bundle: Bundle.resourceBundle(for: PopupManager.self)).instantiateViewController(withIdentifier: "PopupVC") as? PopupVC else {return}
-//        vcPopup.setupUI(popupType: type,title: title,actionClose: actionClose)
         vcPopup.setupUI(popupType: type, actionClose: actionClose)
+        vcPopup.modalPresentationStyle = .overFullScreen
+         vc.present(vcPopup, animated: false)
+    }
+    
+    public func presentToPopupWithImageVC(vc:UIViewController,
+                                          titlePopup: String,
+                                          contentPopup: NSMutableAttributedString,
+                                          imagePopup: UIImage,
+                                          rightBtnTitle: String){
+        guard let vcPopup = UIStoryboard(name: "Popup", bundle: Bundle.resourceBundle(for: PopupManager.self)).instantiateViewController(withIdentifier: "PopupWithImageVC") as? PopupWithImageVC else {return}
+        vcPopup.setupDataUI(titlePopup: titlePopup,
+                            contentPopup: contentPopup,
+                            imagePopup: imagePopup,
+                            rightBtnTitle: rightBtnTitle)
         vcPopup.modalPresentationStyle = .overFullScreen
          vc.present(vcPopup, animated: false)
     }

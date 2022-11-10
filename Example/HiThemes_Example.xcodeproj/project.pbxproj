@@ -35,6 +35,7 @@
 		4915E568291CE726008F9AEA /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915E567291CE726008F9AEA /* PopupVC.swift */; };
 		4915E569291CE726008F9AEA /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915E565291CE726008F9AEA /* PopupManager.swift */; };
 		4915E56A291CE828008F9AEA /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4915E564291CE726008F9AEA /* Popup.storyboard */; };
+		4915E5D1291CF8D6008F9AEA /* PopupWithImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915E5D0291CF8D6008F9AEA /* PopupWithImageVC.swift */; };
 		4C72347147E47DB1197A29C0 /* Pods_HiThemes_Example_HiThemes_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C8550D66DD5B89172D66F1 /* Pods_HiThemes_Example_HiThemes_ExampleUITests.framework */; };
 		6DF370C274D5797EE4A6A21A /* Pods_HiThemes_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2461141695E6527CA3CFD0 /* Pods_HiThemes_Example.framework */; };
 /* End PBXBuildFile section */
@@ -130,6 +131,7 @@
 		4915E564291CE726008F9AEA /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
 		4915E565291CE726008F9AEA /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		4915E567291CE726008F9AEA /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
+		4915E5D0291CF8D6008F9AEA /* PopupWithImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWithImageVC.swift; sourceTree = "<group>"; };
 		5196BCB7361C948C453D83DD /* Pods_HiThemes_Example_HiThemes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiThemes_Example_HiThemes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53776E4E0BBF5296410BF5E0 /* Pods_HiThemes_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiThemes_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DCA3B7032D4CBF182CC020 /* Pods-HiThemes_Example-HiThemes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiThemes_Example-HiThemes.release.xcconfig"; path = "Target Support Files/Pods-HiThemes_Example-HiThemes/Pods-HiThemes_Example-HiThemes.release.xcconfig"; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				4915E567291CE726008F9AEA /* PopupVC.swift */,
+				4915E5D0291CF8D6008F9AEA /* PopupWithImageVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -714,6 +717,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4915DBB3291BB47B008F9AEA /* HiThemesSDK.swift in Sources */,
+				4915E5D1291CF8D6008F9AEA /* PopupWithImageVC.swift in Sources */,
 				4915DBA0291BB47B008F9AEA /* ConstantsEndPoint.swift in Sources */,
 				4915DB9C291BB47B008F9AEA /* Extension+UIImage.swift in Sources */,
 				4915E568291CE726008F9AEA /* PopupVC.swift in Sources */,
