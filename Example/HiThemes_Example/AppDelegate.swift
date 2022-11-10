@@ -7,7 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle:  Bundle(for: AppDelegate.self))
         let vc = storyboard.instantiateViewController(withIdentifier: "ViewController")
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = vc

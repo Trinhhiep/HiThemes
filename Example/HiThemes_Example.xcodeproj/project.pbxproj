@@ -28,10 +28,13 @@
 		4915DB9E291BB47B008F9AEA /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB72291BB47B008F9AEA /* ButtonPrimary.swift */; };
 		4915DB9F291BB47B008F9AEA /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB73291BB47B008F9AEA /* Extension+UIView.swift */; };
 		4915DBA0291BB47B008F9AEA /* ConstantsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB74291BB47B008F9AEA /* ConstantsEndPoint.swift */; };
-		4915DBA1291BB47B008F9AEA /* MiniAppCoreAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4915DB76291BB47B008F9AEA /* MiniAppCoreAssets.xcassets */; };
+		4915DBA1291BB47B008F9AEA /* HiThemesAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4915DB76291BB47B008F9AEA /* HiThemesAssets.xcassets */; };
 		4915DBA2291BB47B008F9AEA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4915DB78291BB47B008F9AEA /* Localizable.strings */; };
 		4915DBA3291BB47B008F9AEA /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB7B291BB47B008F9AEA /* Localizable.swift */; };
 		4915DBB3291BB47B008F9AEA /* HiThemesSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915DB99291BB47B008F9AEA /* HiThemesSDK.swift */; };
+		4915E568291CE726008F9AEA /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915E567291CE726008F9AEA /* PopupVC.swift */; };
+		4915E569291CE726008F9AEA /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915E565291CE726008F9AEA /* PopupManager.swift */; };
+		4915E56A291CE828008F9AEA /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4915E564291CE726008F9AEA /* Popup.storyboard */; };
 		4C72347147E47DB1197A29C0 /* Pods_HiThemes_Example_HiThemes_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C8550D66DD5B89172D66F1 /* Pods_HiThemes_Example_HiThemes_ExampleUITests.framework */; };
 		6DF370C274D5797EE4A6A21A /* Pods_HiThemes_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2461141695E6527CA3CFD0 /* Pods_HiThemes_Example.framework */; };
 /* End PBXBuildFile section */
@@ -119,11 +122,14 @@
 		4915DB72291BB47B008F9AEA /* ButtonPrimary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
 		4915DB73291BB47B008F9AEA /* Extension+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		4915DB74291BB47B008F9AEA /* ConstantsEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsEndPoint.swift; sourceTree = "<group>"; };
-		4915DB76291BB47B008F9AEA /* MiniAppCoreAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MiniAppCoreAssets.xcassets; sourceTree = "<group>"; };
+		4915DB76291BB47B008F9AEA /* HiThemesAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HiThemesAssets.xcassets; sourceTree = "<group>"; };
 		4915DB79291BB47B008F9AEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4915DB7A291BB47B008F9AEA /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4915DB7B291BB47B008F9AEA /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		4915DB99291BB47B008F9AEA /* HiThemesSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiThemesSDK.swift; sourceTree = "<group>"; };
+		4915E564291CE726008F9AEA /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
+		4915E565291CE726008F9AEA /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
+		4915E567291CE726008F9AEA /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
 		5196BCB7361C948C453D83DD /* Pods_HiThemes_Example_HiThemes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiThemes_Example_HiThemes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53776E4E0BBF5296410BF5E0 /* Pods_HiThemes_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiThemes_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DCA3B7032D4CBF182CC020 /* Pods-HiThemes_Example-HiThemes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiThemes_Example-HiThemes.release.xcconfig"; path = "Target Support Files/Pods-HiThemes_Example-HiThemes/Pods-HiThemes_Example-HiThemes.release.xcconfig"; sourceTree = "<group>"; };
@@ -241,10 +247,10 @@
 		1CB954842602608600620639 /* HiThemes */ = {
 			isa = PBXGroup;
 			children = (
+				4915E49F291CE725008F9AEA /* Sources */,
 				4915DB6E291BB47B008F9AEA /* Common */,
 				4915DB6C291BB47B008F9AEA /* Enviroment */,
 				4915DB99291BB47B008F9AEA /* HiThemesSDK.swift */,
-				4915DB7C291BB47B008F9AEA /* Modules */,
 				4915DB75291BB47B008F9AEA /* Resources */,
 				1CB954852602608600620639 /* HiThemes.h */,
 				1CB954862602608600620639 /* Info.plist */,
@@ -303,7 +309,7 @@
 		4915DB75291BB47B008F9AEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4915DB76291BB47B008F9AEA /* MiniAppCoreAssets.xcassets */,
+				4915DB76291BB47B008F9AEA /* HiThemesAssets.xcassets */,
 				4915DB77291BB47B008F9AEA /* Localizable */,
 			);
 			path = Resources;
@@ -318,11 +324,54 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
-		4915DB7C291BB47B008F9AEA /* Modules */ = {
+		4915E49F291CE725008F9AEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4915E560291CE726008F9AEA /* Modules */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4915E560291CE726008F9AEA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4915E561291CE726008F9AEA /* Popup */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4915E561291CE726008F9AEA /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				4915E562291CE726008F9AEA /* ViewModel */,
+				4915E563291CE726008F9AEA /* Manager */,
+				4915E566291CE726008F9AEA /* ViewController */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		4915E562291CE726008F9AEA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Modules;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4915E563291CE726008F9AEA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4915E565291CE726008F9AEA /* PopupManager.swift */,
+				4915E564291CE726008F9AEA /* Popup.storyboard */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4915E566291CE726008F9AEA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4915E567291CE726008F9AEA /* PopupVC.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		88C1C46751A4E381F699293C /* Frameworks */ = {
@@ -528,7 +577,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4915DBA1291BB47B008F9AEA /* MiniAppCoreAssets.xcassets in Resources */,
+				4915E56A291CE828008F9AEA /* Popup.storyboard in Resources */,
+				4915DBA1291BB47B008F9AEA /* HiThemesAssets.xcassets in Resources */,
 				4915DBA2291BB47B008F9AEA /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,9 +716,11 @@
 				4915DBB3291BB47B008F9AEA /* HiThemesSDK.swift in Sources */,
 				4915DBA0291BB47B008F9AEA /* ConstantsEndPoint.swift in Sources */,
 				4915DB9C291BB47B008F9AEA /* Extension+UIImage.swift in Sources */,
+				4915E568291CE726008F9AEA /* PopupVC.swift in Sources */,
 				4915DB9A291BB47B008F9AEA /* Enviromnet.swift in Sources */,
 				4915DB9F291BB47B008F9AEA /* Extension+UIView.swift in Sources */,
 				4915DB9B291BB47B008F9AEA /* Extension+Bundle.swift in Sources */,
+				4915E569291CE726008F9AEA /* PopupManager.swift in Sources */,
 				4915DB9D291BB47B008F9AEA /* BaseClass.swift in Sources */,
 				4915DBA3291BB47B008F9AEA /* Localizable.swift in Sources */,
 				4915DB9E291BB47B008F9AEA /* ButtonPrimary.swift in Sources */,

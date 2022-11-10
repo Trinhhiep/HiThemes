@@ -10,7 +10,7 @@ import Foundation
 extension Bundle {
     public static func resourceBundle(for frameworkClass: AnyClass) -> Bundle {
         
-        guard let bundle = Bundle(identifier: "com.veritran.MiniAppCore") else {
+        guard let bundle = Bundle(identifier: "com.veritran.HiThemes") else {
             fatalError("==bundle not found in \(bundle)")
         }
         return bundle

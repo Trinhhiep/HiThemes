@@ -66,7 +66,7 @@ class ButtonSecondary: UIButton {
 //
 //    lazy var btnBack = ButtonLeftBar()
 //    lazy var btnRightBarOPtion = ButtonRightBarOption()
-//    lazy var lblTitle = LableTitle()
+//    lazy var lblTitle = LabelTitle()
 //    lazy var btnHistory = ButtonHistory()
 ////    var btnBackCallback : (()->Void)?
 //    override init(frame: CGRect) {
@@ -213,7 +213,7 @@ class ButtonSecondary: UIButton {
 //
 //
 //}
-class LableTitle : UILabel{
+class LabelTitle : UILabel{
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -226,10 +226,29 @@ class LableTitle : UILabel{
     func setup(){
         self.textAlignment = .center
         self.textColor = .white
-        self.font = UIFont(name: "Inter-SemiBold", size: 18)
+        self.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         self.numberOfLines = 2
     }
 }
+class LabelTitlePopup : UILabel{
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    func setup(){
+        self.textAlignment = .left
+        self.numberOfLines = 2
+        self.textColor = UIColor(red: 0.157, green: 0.157, blue: 0.157, alpha: 1)
+        self.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+    }
+}
+
+
 class LableRequired : UILabel{
     override init(frame: CGRect) {
         super.init(frame: frame)
