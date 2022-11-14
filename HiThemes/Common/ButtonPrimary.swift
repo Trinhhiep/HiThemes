@@ -138,7 +138,7 @@ class ButtonRightBarOption: UIButton {
     }
     func setupUI(){
         self.setTitle("", for: .normal)
-        self.setImage(UIImage(named: "ic_dots_white", in: Bundle.resourceBundle(for: HiHeaderView.self), compatibleWith: nil), for: .normal)
+        self.setImage(UIImage(named: "ic_dots_white", in: Bundle.resourceBundle(for: ButtonRightBarOption.self), compatibleWith: nil), for: .normal)
         self.addTarget(self, action: #selector(setFunctionRightBarOption), for: .touchUpInside)
     }
     @objc func setFunctionRightBarOption(){
@@ -174,7 +174,7 @@ class ButtonLeftBar: UIButton {
     }
     func setupUI(){
         self.setTitle("", for: .normal)
-        self.setImage(UIImage(named: "ic_back_white", in: Bundle.resourceBundle(for: HiHeaderView.self), compatibleWith: nil), for: .normal)
+        self.setImage(UIImage(named: "ic_back_white", in: Bundle.resourceBundle(for: ButtonLeftBar.self), compatibleWith: nil), for: .normal)
         self.addTarget(self, action: #selector(setFunctionLeftBar), for: .touchUpInside)
     }
    @objc func setFunctionLeftBar(){
@@ -204,7 +204,7 @@ class ButtonHistory: UIButton {
     }
     func setupUI(){
         self.setTitle("", for: .normal)
-        self.setImage(UIImage(named: "ic_back_white", in: Bundle.resourceBundle(for: HiHeaderView.self), compatibleWith: nil), for: .normal)
+        self.setImage(UIImage(named: "ic_history_white", in: Bundle.resourceBundle(for: ButtonHistory.self), compatibleWith: nil), for: .normal)
         self.addTarget(self, action: #selector(setFunction), for: .touchUpInside)
     }
    @objc func setFunction(){
