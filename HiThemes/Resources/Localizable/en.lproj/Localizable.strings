@@ -26,3 +26,5 @@ NSCameraUsageDescription = "Quý khách cần cung cấp quyền truy cập Came
 "take_valid_cavet_message" ="<font face='inter'>The information on the image just taken is not recognized. Please try again.<br></font>
 <font face='inter-medium' ><b1><br>• Take a clearer picture
 <br>• Take the right picture of the vehicle registration certificate.</b1></font>";
+//MARK: - HiHeader HiFooter HiDropdown
+"back_to_home" = "Back to home";

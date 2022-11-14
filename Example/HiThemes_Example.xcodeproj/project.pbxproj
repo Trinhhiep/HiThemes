@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,6 +42,8 @@
 		49C5111E29223A4B00C8A19A /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5111D29223A4B00C8A19A /* Extension+String.swift */; };
 		49C5112229223B1900C8A19A /* DropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C5112029223B1900C8A19A /* DropDownTableViewCell.xib */; };
 		49C5112329223B1900C8A19A /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5112129223B1900C8A19A /* DropDownTableViewCell.swift */; };
+		49C5112529223E6D00C8A19A /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C5112429223E6D00C8A19A /* DropDownView.xib */; };
+		49C5112829223FA600C8A19A /* CustomDropdownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5112729223FA600C8A19A /* CustomDropdownManager.swift */; };
 		4C72347147E47DB1197A29C0 /* Pods_HiThemes_Example_HiThemes_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C8550D66DD5B89172D66F1 /* Pods_HiThemes_Example_HiThemes_ExampleUITests.framework */; };
 		6DF370C274D5797EE4A6A21A /* Pods_HiThemes_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2461141695E6527CA3CFD0 /* Pods_HiThemes_Example.framework */; };
 /* End PBXBuildFile section */
@@ -144,6 +146,8 @@
 		49C5111D29223A4B00C8A19A /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		49C5112029223B1900C8A19A /* DropDownTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownTableViewCell.xib; sourceTree = "<group>"; };
 		49C5112129223B1900C8A19A /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
+		49C5112429223E6D00C8A19A /* DropDownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
+		49C5112729223FA600C8A19A /* CustomDropdownManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDropdownManager.swift; sourceTree = "<group>"; };
 		5196BCB7361C948C453D83DD /* Pods_HiThemes_Example_HiThemes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiThemes_Example_HiThemes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53776E4E0BBF5296410BF5E0 /* Pods_HiThemes_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiThemes_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DCA3B7032D4CBF182CC020 /* Pods-HiThemes_Example-HiThemes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiThemes_Example-HiThemes.release.xcconfig"; path = "Target Support Files/Pods-HiThemes_Example-HiThemes/Pods-HiThemes_Example-HiThemes.release.xcconfig"; sourceTree = "<group>"; };
@@ -311,6 +315,7 @@
 		4915DB6E291BB47B008F9AEA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				49C5112629223ED400C8A19A /* CustomDropdown */,
 				49C5111F29223B1900C8A19A /* Cell */,
 				4915DB6F291BB47B008F9AEA /* Extension+Bundle.swift */,
 				4915DB70291BB47B008F9AEA /* Extension+UIImage.swift */,
@@ -318,7 +323,6 @@
 				4915DB72291BB47B008F9AEA /* ButtonPrimary.swift */,
 				4915DB73291BB47B008F9AEA /* Extension+UIView.swift */,
 				4915DB74291BB47B008F9AEA /* ConstantsEndPoint.swift */,
-				49C5111B2922395A00C8A19A /* CustomView.swift */,
 				49C5111D29223A4B00C8A19A /* Extension+String.swift */,
 			);
 			path = Common;
@@ -401,6 +405,16 @@
 				49C5112129223B1900C8A19A /* DropDownTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		49C5112629223ED400C8A19A /* CustomDropdown */ = {
+			isa = PBXGroup;
+			children = (
+				49C5111B2922395A00C8A19A /* CustomView.swift */,
+				49C5112429223E6D00C8A19A /* DropDownView.xib */,
+				49C5112729223FA600C8A19A /* CustomDropdownManager.swift */,
+			);
+			path = CustomDropdown;
 			sourceTree = "<group>";
 		};
 		88C1C46751A4E381F699293C /* Frameworks */ = {
@@ -607,6 +621,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C5112529223E6D00C8A19A /* DropDownView.xib in Resources */,
 				4915E56A291CE828008F9AEA /* Popup.storyboard in Resources */,
 				4915DBA1291BB47B008F9AEA /* HiThemesAssets.xcassets in Resources */,
 				49C5112229223B1900C8A19A /* DropDownTableViewCell.xib in Resources */,
@@ -768,6 +783,7 @@
 				49C5111C2922395A00C8A19A /* CustomView.swift in Sources */,
 				4915DB9C291BB47B008F9AEA /* Extension+UIImage.swift in Sources */,
 				49C5111E29223A4B00C8A19A /* Extension+String.swift in Sources */,
+				49C5112829223FA600C8A19A /* CustomDropdownManager.swift in Sources */,
 				49C5112329223B1900C8A19A /* DropDownTableViewCell.swift in Sources */,
 				4915E568291CE726008F9AEA /* PopupVC.swift in Sources */,
 				4915DB9A291BB47B008F9AEA /* Enviromnet.swift in Sources */,

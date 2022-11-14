@@ -26,3 +26,7 @@ NSCameraUsageDescription = "Quý khách cần cung cấp quyền truy cập Came
 "take_valid_cavet_message" ="<font face='inter'>Không nhận diện được thông tin trên hình ảnh vừa chụp. Quý khách vui lòng thử lại.<br></font>
 <font face='inter-medium' ><b1><br>• Chụp ảnh rõ nét hơn
 <br>• Chụp đúng hình ảnh cavet xe.</b1></font>";
+
+
+//MARK: - HiHeader HiFooter HiDropdown
+"back_to_home" = "Trở về trang chủ";

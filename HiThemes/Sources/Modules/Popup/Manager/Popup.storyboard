@@ -401,12 +401,22 @@ Mọi phản hồi và góp ý của Quý khách đã được FPT Telecom ghi n
                                     <constraint firstItem="Yxu-bC-O26" firstAttribute="top" secondItem="aCr-5e-58O" secondAttribute="bottom" constant="16" id="urV-Yq-gOl"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3d-WH-Sy3" customClass="HiHeaderView" customModule="HiThemes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="72"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="S3d-WH-Sy3" secondAttribute="height" multiplier="23/4" id="GxB-ID-YgN"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Ru-Td-zur"/>
                         <color key="backgroundColor" white="0.0" alpha="0.50116411423841056" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4Ru-Td-zur" firstAttribute="trailing" secondItem="hWd-h8-aOy" secondAttribute="trailing" id="54f-Nn-pEU"/>
+                            <constraint firstItem="S3d-WH-Sy3" firstAttribute="leading" secondItem="4Ru-Td-zur" secondAttribute="leading" id="XKH-a1-cOY"/>
+                            <constraint firstItem="S3d-WH-Sy3" firstAttribute="top" secondItem="4Ru-Td-zur" secondAttribute="top" id="dU7-Gx-hGy"/>
                             <constraint firstItem="hWd-h8-aOy" firstAttribute="leading" secondItem="4Ru-Td-zur" secondAttribute="leading" id="irI-RE-sah"/>
+                            <constraint firstItem="4Ru-Td-zur" firstAttribute="trailing" secondItem="S3d-WH-Sy3" secondAttribute="trailing" id="qZB-2f-8DS"/>
                             <constraint firstItem="Yxu-bC-O26" firstAttribute="bottom" secondItem="4Ru-Td-zur" secondAttribute="bottom" id="sN6-If-ooC"/>
                             <constraint firstAttribute="bottom" secondItem="hWd-h8-aOy" secondAttribute="bottom" id="xam-yZ-5Cr"/>
                         </constraints>
