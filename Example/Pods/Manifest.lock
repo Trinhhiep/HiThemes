@@ -1,3 +1,22 @@
-PODFILE CHECKSUM: 4dfa5bf793074f631bdd6845b6ceacf953c9444d
+PODS:
+  - Kingfisher (6.3.1)
+
+DEPENDENCIES:
+  - Kingfisher (from `https://github.com/onevcat/Kingfisher.git`, branch `version6-xcode13`)
+
+EXTERNAL SOURCES:
+  Kingfisher:
+    :branch: version6-xcode13
+    :git: https://github.com/onevcat/Kingfisher.git
+
+CHECKOUT OPTIONS:
+  Kingfisher:
+    :commit: d0494dd78f7adf2d3526fdf3267176553020c041
+    :git: https://github.com/onevcat/Kingfisher.git
+
+SPEC CHECKSUMS:
+  Kingfisher: 8b783c3d7be73a99b2172a743a5bc0a4dd331d79
+
+PODFILE CHECKSUM: 68f7e19366ce1ffa29e0faa31c1058d8eec7a2c0
 
 COCOAPODS: 1.11.2

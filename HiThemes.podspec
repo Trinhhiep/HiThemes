@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = "HiThemes.xcframework"
   spec.ios.deployment_target = '11.0'
   spec.swift_version = '5.0'
-  s.source_files = 'HiThemes/Sources/**/*'
+  spec.source_files = 'HiThemes/Sources/**/*'
   spec.resource_bundles = {
      'HiThemesAssets' => ['HiThemes/Resources/**/*']
    }

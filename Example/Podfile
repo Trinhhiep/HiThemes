@@ -12,7 +12,7 @@ target 'HiThemes_Example' do
     # Comment the next line if you don't want to use dynamic frameworks
     use_frameworks!
     # Pods for HiThemes
-
+    pod 'Kingfisher', :git => 'https://github.com/onevcat/Kingfisher.git', :branch => 'version6-xcode13'
     # Automate dependencies from HiThemes.podspec
     lib_dependencies = JSON.parse(`pod ipc spec ../HiThemes.podspec`)
 

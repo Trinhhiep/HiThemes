@@ -62,157 +62,157 @@ class ButtonSecondary: UIButton {
 }
 
 
-//class HiHeaderView: UIView {
-//
-//    lazy var btnBack = ButtonLeftBar()
-//    lazy var btnRightBarOPtion = ButtonRightBarOption()
-//    lazy var lblTitle = LabelTitle()
-//    lazy var btnHistory = ButtonHistory()
-////    var btnBackCallback : (()->Void)?
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        setupUI()
-//
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        setupUI()
-//
-//    }
-//    func setupUI(){
-//
-//        btnBack.translatesAutoresizingMaskIntoConstraints = false
-//        btnBack.setImage(UIImage(named: "ic_back_white"), for: .normal)
-//        btnRightBarOPtion.translatesAutoresizingMaskIntoConstraints = false
-//        btnRightBarOPtion.setImage(UIImage(named: "ic_dots_white"), for: .normal)
-//        lblTitle.translatesAutoresizingMaskIntoConstraints = false
-//        lblTitle.minimumScaleFactor = 0.8
-//        lblTitle.adjustsFontSizeToFitWidth = true
-//        lblTitle.text = "N/A"
-//        btnHistory.translatesAutoresizingMaskIntoConstraints = false
-//        btnHistory.setImage(UIImage(named: "ic_history_white"), for: .normal)
-//        self.addSubview(btnBack)
-//        self.addSubview(btnRightBarOPtion)
-//        self.addSubview(btnHistory)
-//        btnHistory.isHidden = true
-//        self.addSubview(lblTitle)
-//        NSLayoutConstraint.activate([
-//            btnBack.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.8),
-//            btnBack.widthAnchor.constraint(equalTo: btnBack.heightAnchor, multiplier: 1),
-//            btnBack.topAnchor.constraint(equalTo: self.topAnchor),
-//            btnBack.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-//            btnBack.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-//
-//            btnRightBarOPtion.widthAnchor.constraint(equalTo: btnBack.widthAnchor),
-//            btnRightBarOPtion.heightAnchor.constraint(equalTo: btnBack.heightAnchor),
-//            btnRightBarOPtion.centerYAnchor.constraint(equalTo: btnBack.centerYAnchor),
-//            btnRightBarOPtion.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-//
-//            btnHistory.widthAnchor.constraint(equalTo: btnBack.widthAnchor, multiplier: 0.8),
-//            btnHistory.heightAnchor.constraint(equalTo: btnBack.heightAnchor),
-//            btnHistory.centerYAnchor.constraint(equalTo: btnBack.centerYAnchor),
-//            btnHistory.trailingAnchor.constraint(equalTo: btnRightBarOPtion.leadingAnchor, constant: 4),
-//
-//            lblTitle.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-//            lblTitle.trailingAnchor.constraint(equalTo: btnHistory.leadingAnchor),
-//            lblTitle.centerYAnchor.constraint(equalTo: btnBack.centerYAnchor),
-//
-//
-//        ])
-//    }
-//}
-//class ButtonRightBarOption: UIButton {
-//    var data : [DropViewModel]? = [DropViewModel(imv: "back-to-home-black", title: Localizable.shared.localizedString(key: "back_to_home"))]
-//    var callback : (()-> Void)?
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        setupUI()
-//
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        setupUI()
-//
-//    }
-//    func setupUI(){
-//        self.setTitle("", for: .normal)
-//        self.setImage(UIImage(named: "ic_dots_white"), for: .normal)
-//        self.addTarget(self, action: #selector(setFunctionRightBarOption), for: .touchUpInside)
-//    }
-//    @objc func setFunctionRightBarOption(){
-//        if callback != nil{
-//            callback?()
-//        }else{
-//            guard let data = data else {
-//                return
-//            }
-//            DropDownManager.shared.showDropView(sender: self, data: data, onSelect: { [weak self] number in
-//                switch number {
-//                default :
-//                    if let navigationController = self!.window?.rootViewController as? UINavigationController {
-//                        navigationController.popToRootViewController(animated: true)
-//                    }
-//                }
-//            })
-//        }
-//    }
-//}
-//class ButtonLeftBar: UIButton {
-//    var callback : (()-> Void)?
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        setupUI()
-//
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        setupUI()
-//
-//    }
-//    func setupUI(){
-//        self.setTitle("", for: .normal)
-//        self.setImage(UIImage(named: "ic_back_white"), for: .normal)
-//        self.addTarget(self, action: #selector(setFunctionLeftBar), for: .touchUpInside)
-//    }
-//   @objc func setFunctionLeftBar(){
-//       if callback == nil {
-//           if let navigationController = self.window?.rootViewController as? UINavigationController {
-//                   navigationController.popViewController(animated: true)
-//           }
-//       }else{
-//           callback?()
-//       }
-//    }
-//
-//
-//}
-//class ButtonHistory: UIButton {
-//    var callback : (()-> Void)?
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        setupUI()
-//
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//        setupUI()
-//
-//    }
-//    func setupUI(){
-//        self.setTitle("", for: .normal)
-//        self.setImage(UIImage(named: "ic_back_white"), for: .normal)
-//        self.addTarget(self, action: #selector(setFunction), for: .touchUpInside)
-//    }
-//   @objc func setFunction(){
-//           callback?()
-//    }
-//
-//
-//}
+class HiHeaderView: UIView {
+
+    lazy var btnBack = ButtonLeftBar()
+    lazy var btnRightBarOPtion = ButtonRightBarOption()
+    lazy var lblTitle = LabelTitle()
+    lazy var btnHistory = ButtonHistory()
+//    var btnBackCallback : (()->Void)?
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupUI()
+
+    }
+    func setupUI(){
+
+        btnBack.translatesAutoresizingMaskIntoConstraints = false
+        btnBack.setImage(UIImage(named: "ic_back_white"), for: .normal)
+        btnRightBarOPtion.translatesAutoresizingMaskIntoConstraints = false
+        btnRightBarOPtion.setImage(UIImage(named: "ic_dots_white"), for: .normal)
+        lblTitle.translatesAutoresizingMaskIntoConstraints = false
+        lblTitle.minimumScaleFactor = 0.8
+        lblTitle.adjustsFontSizeToFitWidth = true
+        lblTitle.text = "N/A"
+        btnHistory.translatesAutoresizingMaskIntoConstraints = false
+        btnHistory.setImage(UIImage(named: "ic_history_white"), for: .normal)
+        self.addSubview(btnBack)
+        self.addSubview(btnRightBarOPtion)
+        self.addSubview(btnHistory)
+        btnHistory.isHidden = true
+        self.addSubview(lblTitle)
+        NSLayoutConstraint.activate([
+            btnBack.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.8),
+            btnBack.widthAnchor.constraint(equalTo: btnBack.heightAnchor, multiplier: 1),
+            btnBack.topAnchor.constraint(equalTo: self.topAnchor),
+            btnBack.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            btnBack.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+
+            btnRightBarOPtion.widthAnchor.constraint(equalTo: btnBack.widthAnchor),
+            btnRightBarOPtion.heightAnchor.constraint(equalTo: btnBack.heightAnchor),
+            btnRightBarOPtion.centerYAnchor.constraint(equalTo: btnBack.centerYAnchor),
+            btnRightBarOPtion.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+
+            btnHistory.widthAnchor.constraint(equalTo: btnBack.widthAnchor, multiplier: 0.8),
+            btnHistory.heightAnchor.constraint(equalTo: btnBack.heightAnchor),
+            btnHistory.centerYAnchor.constraint(equalTo: btnBack.centerYAnchor),
+            btnHistory.trailingAnchor.constraint(equalTo: btnRightBarOPtion.leadingAnchor, constant: 4),
+
+            lblTitle.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            lblTitle.trailingAnchor.constraint(equalTo: btnHistory.leadingAnchor),
+            lblTitle.centerYAnchor.constraint(equalTo: btnBack.centerYAnchor),
+
+
+        ])
+    }
+}
+class ButtonRightBarOption: UIButton {
+    var data : [DropViewModel]? = [DropViewModel(imv: "back-to-home-black", title: Localizable.shared.localizedString(key: "back_to_home"))]
+    var callback : (()-> Void)?
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupUI()
+
+    }
+    func setupUI(){
+        self.setTitle("", for: .normal)
+        self.setImage(UIImage(named: "ic_dots_white"), for: .normal)
+        self.addTarget(self, action: #selector(setFunctionRightBarOption), for: .touchUpInside)
+    }
+    @objc func setFunctionRightBarOption(){
+        if callback != nil{
+            callback?()
+        }else{
+            guard let data = data else {
+                return
+            }
+            DropDownManager.shared.showDropView(sender: self, data: data, onSelect: { [weak self] number in
+                switch number {
+                default :
+                    if let navigationController = self!.window?.rootViewController as? UINavigationController {
+                        navigationController.popToRootViewController(animated: true)
+                    }
+                }
+            })
+        }
+    }
+}
+class ButtonLeftBar: UIButton {
+    var callback : (()-> Void)?
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupUI()
+
+    }
+    func setupUI(){
+        self.setTitle("", for: .normal)
+        self.setImage(UIImage(named: "ic_back_white"), for: .normal)
+        self.addTarget(self, action: #selector(setFunctionLeftBar), for: .touchUpInside)
+    }
+   @objc func setFunctionLeftBar(){
+       if callback == nil {
+           if let navigationController = self.window?.rootViewController as? UINavigationController {
+                   navigationController.popViewController(animated: true)
+           }
+       }else{
+           callback?()
+       }
+    }
+
+
+}
+class ButtonHistory: UIButton {
+    var callback : (()-> Void)?
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupUI()
+
+    }
+    func setupUI(){
+        self.setTitle("", for: .normal)
+        self.setImage(UIImage(named: "ic_back_white"), for: .normal)
+        self.addTarget(self, action: #selector(setFunction), for: .touchUpInside)
+    }
+   @objc func setFunction(){
+           callback?()
+    }
+
+
+}
 class LabelTitle : UILabel{
     override init(frame: CGRect) {
         super.init(frame: frame)
