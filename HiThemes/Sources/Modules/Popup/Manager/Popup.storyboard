@@ -25,7 +25,7 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CjS-mS-Kdt">
                                                 <rect key="frame" x="24" y="61.5" width="318" height="1"/>
-                                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Pjn-oo-vju"/>
                                                 </constraints>
@@ -33,7 +33,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xác nhận giao dịch" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L0-qa-L9Q" customClass="LabelTitlePopup" customModule="HiThemes" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="24" width="290" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jl-W0-mtE">
@@ -43,7 +43,7 @@
                                                     <constraint firstAttribute="width" constant="48" id="wvQ-rD-hYD"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="a"/>
+                                                <state key="normal" image="ic_close_inpopup_gray"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -199,7 +199,7 @@ Mọi phản hồi và góp ý của Quý khách đã được FPT Telecom ghi n
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPM-Bp-U3N">
                                                 <rect key="frame" x="24" y="61.5" width="318" height="1"/>
-                                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="LAV-yf-9NW"/>
                                                 </constraints>
@@ -207,7 +207,7 @@ Mọi phản hồi và góp ý của Quý khách đã được FPT Telecom ghi n
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xác nhận giao dịch" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcN-En-gaK" customClass="LabelTitlePopup" customModule="HiThemes" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="24" width="318" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -329,6 +329,100 @@ Mọi phản hồi và góp ý của Quý khách đã được FPT Telecom ghi n
             </objects>
             <point key="canvasLocation" x="917" y="96"/>
         </scene>
+        <!--Popup With List ItemVC-->
+        <scene sceneID="FJM-iZ-oR0">
+            <objects>
+                <viewController storyboardIdentifier="PopupWithListItemVC" id="dlO-Sh-8ql" customClass="PopupWithListItemVC" customModule="HiThemes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mb4-Fa-2uZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-h8-aOy">
+                                <rect key="frame" x="0.0" y="483.5" width="414" height="412.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCr-5e-58O" userLabel="TitleView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="62.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooP-be-hHt">
+                                                <rect key="frame" x="24" y="61.5" width="366" height="1"/>
+                                                <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="Hpy-5z-Krs"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xác nhận giao dịch" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH8-lO-xGW" customClass="LabelTitlePopup" customModule="HiThemes" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="24" width="338" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZg-dc-2Hu">
+                                                <rect key="frame" x="366" y="0.0" width="48" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="RZg-dc-2Hu" secondAttribute="height" multiplier="1:1" id="S23-LS-hVg"/>
+                                                    <constraint firstAttribute="width" constant="48" id="mNx-M5-lDj"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="ic_close_inpopup_gray"/>
+                                                <connections>
+                                                    <action selector="actionClose:" destination="pPn-zK-P65" eventType="touchUpInside" id="7lJ-Ot-2gJ"/>
+                                                    <action selector="actionClose:" destination="dlO-Sh-8ql" eventType="touchUpInside" id="uBc-9M-oDM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ooP-be-hHt" secondAttribute="bottom" id="GL5-T4-JF3"/>
+                                            <constraint firstItem="RZg-dc-2Hu" firstAttribute="leading" secondItem="NH8-lO-xGW" secondAttribute="trailing" constant="4" id="MhN-J0-XQ3"/>
+                                            <constraint firstItem="ooP-be-hHt" firstAttribute="leading" secondItem="aCr-5e-58O" secondAttribute="leading" constant="24" id="QN0-Gm-lxh"/>
+                                            <constraint firstItem="NH8-lO-xGW" firstAttribute="leading" secondItem="aCr-5e-58O" secondAttribute="leading" constant="24" id="eMr-vW-21P"/>
+                                            <constraint firstAttribute="trailing" secondItem="ooP-be-hHt" secondAttribute="trailing" constant="24" id="gBx-Y0-aZi"/>
+                                            <constraint firstItem="NH8-lO-xGW" firstAttribute="top" secondItem="aCr-5e-58O" secondAttribute="top" constant="24" id="gJI-8P-fuI"/>
+                                            <constraint firstItem="ooP-be-hHt" firstAttribute="top" secondItem="NH8-lO-xGW" secondAttribute="bottom" constant="16" id="hiN-sr-72E"/>
+                                            <constraint firstAttribute="trailing" secondItem="RZg-dc-2Hu" secondAttribute="trailing" id="kJW-qB-oz3"/>
+                                            <constraint firstItem="RZg-dc-2Hu" firstAttribute="top" secondItem="aCr-5e-58O" secondAttribute="top" id="wki-iU-f4o"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yxu-bC-O26">
+                                        <rect key="frame" x="0.0" y="78.5" width="414" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="300" id="WWT-GF-JbJ"/>
+                                        </constraints>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Yxu-bC-O26" firstAttribute="leading" secondItem="hWd-h8-aOy" secondAttribute="leading" id="5cT-Tt-Lrn"/>
+                                    <constraint firstAttribute="trailing" secondItem="aCr-5e-58O" secondAttribute="trailing" id="AIc-jq-HGw"/>
+                                    <constraint firstItem="aCr-5e-58O" firstAttribute="top" secondItem="hWd-h8-aOy" secondAttribute="top" id="JFq-Qb-cvZ"/>
+                                    <constraint firstItem="aCr-5e-58O" firstAttribute="leading" secondItem="hWd-h8-aOy" secondAttribute="leading" id="RK5-I2-p7C"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yxu-bC-O26" secondAttribute="trailing" id="r9N-6j-kAt"/>
+                                    <constraint firstItem="Yxu-bC-O26" firstAttribute="top" secondItem="aCr-5e-58O" secondAttribute="bottom" constant="16" id="urV-Yq-gOl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Ru-Td-zur"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.50116411423841056" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Ru-Td-zur" firstAttribute="trailing" secondItem="hWd-h8-aOy" secondAttribute="trailing" id="54f-Nn-pEU"/>
+                            <constraint firstItem="hWd-h8-aOy" firstAttribute="leading" secondItem="4Ru-Td-zur" secondAttribute="leading" id="irI-RE-sah"/>
+                            <constraint firstItem="Yxu-bC-O26" firstAttribute="bottom" secondItem="4Ru-Td-zur" secondAttribute="bottom" id="sN6-If-ooC"/>
+                            <constraint firstAttribute="bottom" secondItem="hWd-h8-aOy" secondAttribute="bottom" id="xam-yZ-5Cr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="hWd-h8-aOy" id="kiG-HD-DwW"/>
+                        <outlet property="lblTitlePopup" destination="NH8-lO-xGW" id="0MW-eS-D3K"/>
+                        <outlet property="tableView" destination="Yxu-bC-O26" id="KZc-5t-iWx"/>
+                        <outlet property="tableViewHeight" destination="WWT-GF-JbJ" id="Ga8-Ke-Glc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LX9-Ro-eZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="pPn-zK-P65" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1729" y="107"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="9bv-ZY-e2l">
@@ -339,7 +433,7 @@ Mọi phản hồi và góp ý của Quý khách đã được FPT Telecom ghi n
         </designable>
     </designables>
     <resources>
-        <image name="a" width="128" height="128"/>
+        <image name="ic_close_inpopup_gray" width="48" height="48"/>
         <image name="ic_success_circle_green" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

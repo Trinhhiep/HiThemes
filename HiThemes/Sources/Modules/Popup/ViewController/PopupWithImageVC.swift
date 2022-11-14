@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PopupWithImageVC: UIViewController {
+class PopupWithImageVC: BaseViewController {
     @IBOutlet weak var popupContainer: UIView!
     @IBOutlet weak var lblTitle: LabelTitlePopup!
     
@@ -44,7 +44,14 @@ class PopupWithImageVC: UIViewController {
     }
   
     @objc func rightBtnAction(){
-        callbackActionRightButton?()
+        UIView.animate(withDuration: 0.2, delay: 0,
+                       options: [.curveEaseInOut, .transitionCrossDissolve], animations: {[weak self] in
+            self?.view.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
+        }) { [weak self] _ in
+            self?.dismiss(animated: false)
+            self?.callbackActionRightButton?()
+        }
+        
     }
     func setupDataUI(titlePopup : String, contentPopup : NSMutableAttributedString, imagePopup : UIImage, rightBtnTitle : String){
         self.titlePopup = titlePopup

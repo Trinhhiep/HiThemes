@@ -23,7 +23,7 @@ public enum PopupType{
                         titleRightBtn: String,
                         actionRightBtn : (()->Void)?)  // image, content, 1 button
 }
-public class PopupVC: UIViewController {
+public class PopupVC: BaseViewController {
     @IBOutlet weak var popupContainer: UIView!
     @IBOutlet weak var lblTitle: LabelTitlePopup!
     @IBOutlet weak var btnClose: UIButton!

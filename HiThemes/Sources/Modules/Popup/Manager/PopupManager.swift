@@ -27,10 +27,24 @@ public class PopupManager{
                         
         }
 //        presentToPopupVC(vc: vc, type: typeConfirm)
-        presentToPopupWithImageVC(vc: vc, titlePopup: title,
-                                  contentPopup: content,
-                                  imagePopup: UIImage(named: "img_Mascot", in: Bundle.resourceBundle(for: PopupManager.self), compatibleWith: nil) ?? UIImage(),
-                                  rightBtnTitle: "Confirm")
+//        presentToPopupWithImageVC(vc: vc, titlePopup: title,
+//                                  contentPopup: content,
+//                                  imagePopup: UIImage(named: "img_Mascot", in: Bundle.resourceBundle(for: PopupManager.self), compatibleWith: nil) ?? UIImage(),
+//                                  rightBtnTitle: "Confirm")
+       
+    }
+    public func presentTest1(vc : UIViewController, delegate: PopupWithListItemVCDelegate){
+//        let title = "Test Title Popup"
+//        let content = NSMutableAttributedString(string: "Cảm ơn Quý khách đã đánh giá Kỹ thuật viên của FPT Telecom!")
+//        let cancel = "Cancel"
+//        let confirm = "Confirm"
+        presentToPopupWithListItemVC(vc: vc, delegate: delegate)
+    }
+    public func presentToPopupWithListItemVC(vc:UIViewController,delegate: PopupWithListItemVCDelegate, actionClose : (()->Void)? = nil){
+        guard let vcPopup = UIStoryboard(name: "Popup", bundle: Bundle.resourceBundle(for: PopupManager.self)).instantiateViewController(withIdentifier: "PopupWithListItemVC") as? PopupWithListItemVC else {return}
+        vcPopup.delegate = delegate
+        vcPopup.modalPresentationStyle = .overFullScreen
+         vc.present(vcPopup, animated: false)
     }
     
     public func presentToPopupVC(vc:UIViewController, type: PopupType, actionClose : (()->Void)? = nil){
